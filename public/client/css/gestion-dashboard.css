@@ -1,0 +1,92 @@
+:root {
+  --pricy-dark: #0f172a;
+  --pricy-darker: #111827;
+  --pricy-blue: #274f9e;
+  --pricy-blue-soft: #3467c7;
+}
+
+body.pricy-gestion-body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(circle at top left, #1b3f88, #0f172a 52%);
+  min-height: 100vh;
+}
+
+.pricy-gestion-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.pricy-sidebar {
+  background: linear-gradient(180deg, var(--pricy-blue-soft), var(--pricy-blue));
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.pricy-logo-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #facc15;
+  display: inline-block;
+}
+
+.pricy-side-menu .list-group-item {
+  border: 0;
+  border-radius: 0.4rem;
+  margin-bottom: 0.4rem;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.pricy-side-menu .list-group-item.active,
+.pricy-side-menu .list-group-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.pricy-gestion-main {
+  padding: 1rem;
+}
+
+.pricy-search-input {
+  min-width: 220px;
+}
+
+.pricy-quick-card {
+  border-radius: 0.9rem;
+  background: #f8fafc;
+}
+
+.pricy-quick-card-primary {
+  background: linear-gradient(135deg, #2f67cf, #2050ab);
+  color: #fff;
+}
+
+.pricy-table thead th {
+  text-transform: uppercase;
+  font-size: 0.73rem;
+  color: #64748b;
+  border-bottom-width: 1px;
+}
+
+.pricy-table tbody td {
+  border-bottom-color: #e5e7eb;
+}
+
+@media (max-width: 991px) {
+  .pricy-gestion-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .pricy-sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
+  .pricy-search-input {
+    min-width: 150px;
+  }
+}
