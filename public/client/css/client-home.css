@@ -1,0 +1,106 @@
+:root{
+  --pricy-font: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body.pricy-body{
+  margin: 0;
+  font-family: var(--pricy-font);
+  color: #111827;
+}
+
+.pricy-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(3px);
+  background: rgba(15, 23, 42, 0.20);
+}
+
+.pricy-brand{
+  letter-spacing: 0.02em;
+}
+
+.pricy-nav-link{
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.88) !important;
+}
+
+.pricy-nav-link:hover{
+  color: #ffffff !important;
+}
+
+.pricy-nav-actions .btn-warning{
+  border-radius: 0.2rem;
+}
+
+.pricy-hero-section{
+  position: relative;
+}
+
+.pricy-carousel-image{
+  height: 74vh;
+  min-height: 430px;
+  max-height: 760px;
+  object-fit: cover;
+}
+
+.pricy-carousel-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.45));
+  pointer-events: none;
+}
+
+.pricy-hero-content{
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.pricy-caption-text{
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.1rem;
+}
+
+.pricy-carousel-fallback{
+  background: linear-gradient(135deg, #0f172a, #1f2937);
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  width: 7%;
+}
+
+@media (max-width: 992px){
+  .pricy-header{
+    background: rgba(15, 23, 42, 0.45);
+  }
+
+  .pricy-header .navbar-collapse{
+    background: rgba(15, 23, 42, 0.84);
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .pricy-carousel-image{
+    height: 62vh;
+    min-height: 380px;
+  }
+  .pricy-caption-text{
+    max-width: 95%;
+    font-size: 1rem;
+  }
+}
+
