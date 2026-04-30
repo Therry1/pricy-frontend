@@ -104,6 +104,13 @@
             <form action="{{ route('gestion.dashboard') }}" method="get">
                 <div class="mb-3">
                     <div class="input-group">
+                        <input type="text" class="form-control login-input" placeholder="ID du compte ou alias" aria-label="Nom d'utilisateur" required>
+                        <span class="input-group-text">&#128100;</span>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
                         <input type="text" class="form-control login-input" placeholder="Nom d'utilisateur" aria-label="Nom d'utilisateur" required>
                         <span class="input-group-text">&#128100;</span>
                     </div>
