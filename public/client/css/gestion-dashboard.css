@@ -8,7 +8,7 @@
 body.pricy-gestion-body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(circle at top left, #1b3f88, #0f172a 52%);
+  background: #e2dede;
   min-height: 100vh;
 }
 
@@ -19,8 +19,12 @@ body.pricy-gestion-body {
 }
 
 .pricy-sidebar {
+  background: #3a3a3a; /* Couleur grise demandée */
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pricy-profile-section {
   background: linear-gradient(180deg, var(--pricy-blue-soft), var(--pricy-blue));
-  border-right: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .pricy-logo-dot {
@@ -86,7 +90,25 @@ body.pricy-gestion-body {
     z-index: 1020;
   }
 
-  .pricy-search-input {
+    .pricy-search-input {
     min-width: 150px;
   }
+}
+
+/* Nested Sidebar Menu Styles */
+.dropdown-chevron {
+  transition: transform 0.3s ease;
+}
+
+[aria-expanded="true"] .dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+.pricy-nested-menu .list-group-item {
+  background: transparent !important;
+}
+
+.hover-opacity-100:hover {
+  opacity: 1 !important;
+  background: rgba(255, 255, 255, 0.1) !important;
 }
