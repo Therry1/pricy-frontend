@@ -15,26 +15,85 @@
     <div class="p-3 p-lg-4 flex-grow-1 overflow-auto">
         <div class="list-group pricy-side-menu list-group-flush">
             <a href="{{ route('gestion.dashboard') }}" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 border-0">
-                <i class="bi bi-grid-fill"></i> DASHBOARD
+                <i class="fa fa-dashboard" style="color: orangered;"></i> DASHBOARD
             </a>
+
+            <!-- Gestion des identités et des acces -->
+            <div class="pricy-nested-menu">
+                <a href="#produitMenu" class="list-group-item list-group-item-action d-flex align-items-center justify-content-between gap-3 py-3 border-0" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    <span class="d-flex align-items-center gap-3">
+                        <i class="fa fa-tags" style="color: orangered;"></i> GESTION DES IDENTITES ET ACCES (IAM)
+                    </span>
+                    <i class="fa fa-chevron-down small transition-all dropdown-chevron"></i>
+                </a>
+                <div class="collapse ps-4" id="produitMenu">
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">Ajouter un utilisateur</a>
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">liste des utilisateurs</a>
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">Ajouter un role</a>
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">liste des roles</a>
+                </div>
+            </div>
+
+            <!-- Gestion de Produit -->
+            <div class="pricy-nested-menu">
+                <a href="#produitMenu" class="list-group-item list-group-item-action d-flex align-items-center justify-content-between gap-3 py-3 border-0" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    <span class="d-flex align-items-center gap-3">
+                        <i class="fa fa-tags" style="color: orangered;"></i> GESTION DE PRODUIT
+                    </span>
+                    <i class="fa fa-chevron-down small transition-all dropdown-chevron"></i>
+                </a>
+                <div class="collapse ps-4" id="produitMenu">
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">Ajouter un produit</a>
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">Lister les produits disponible</a>
+                </div>
+            </div>
+
+            <!-- Gestion de Stock -->
+            <div class="pricy-nested-menu">
+                <a href="#stockMenu" class="list-group-item list-group-item-action d-flex align-items-center justify-content-between gap-3 py-3 border-0" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    <span class="d-flex align-items-center gap-3">
+                        <i class="fa fa-cubes" style="color: orangered;"></i> GESTION DE STOCK
+                    </span>
+                    <i class="fa fa-chevron-down small transition-all dropdown-chevron"></i>
+                </a>
+                <div class="collapse ps-4" id="stockMenu">
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">Consulter le stock</a>
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">Consulter les inventaire</a>
+                </div>
+            </div>
+
+            <!-- Comptabilité et Finance -->
+            <div class="pricy-nested-menu">
+                <a href="#financeMenu" class="list-group-item list-group-item-action d-flex align-items-center justify-content-between gap-3 py-3 border-0" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    <span class="d-flex align-items-center gap-3">
+                        <i class="fa fa-money" style="color: orangered;"></i> COMPTABILITÉ ET FINANCE
+                    </span>
+                    <i class="fa fa-chevron-down small transition-all dropdown-chevron"></i>
+                </a>
+                <div class="collapse ps-4" id="financeMenu">
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">Rapport journalier des vente</a>
+                    <a href="#" class="list-group-item list-group-item-action py-2 border-0 small opacity-75 hover-opacity-100 text-white-50">Simulation d'un calcul</a>
+                </div>
+            </div>
+
             <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 border-0">
-                <i class="bi bi-image"></i> VISUAL ATTACHMENTS
+                <i class="fa fa-image" style="color: orangered;"></i> VISUAL ATTACHMENTS
             </a>
             <a href="#" class="list-group-item list-group-item-action active d-flex align-items-center gap-3 py-3 border-0">
-                <i class="bi bi-eye-fill"></i> PROJECT STATISTICS
+                <i class="fa fa-bar-chart" style="color: orangered;"></i> PROJECT STATISTICS
             </a>
             <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 border-0">
-                <i class="bi bi-people-fill"></i> TEAM MEMBERS
+                <i class="fa fa-users" style="color: orangered;"></i> TEAM MEMBERS
             </a>
             <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 border-0">
-                <i class="bi bi-hdd-stack-fill"></i> SERVER DATA
+                <i class="fa fa-server" style="color: orangered;"></i> SERVER DATA
             </a>
             <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 border-0">
-                <i class="bi bi-folder-fill"></i> FOLDER SETTINGS
+                <i class="fa fa-folder-open" style="color: orangered;"></i> FOLDER SETTINGS
             </a>
             <a href="#" class="list-group-item list-group-item-action d-flex align-items-center justify-content-between gap-3 py-3 border-0">
                 <span class="d-flex align-items-center gap-3">
-                    <i class="bi bi-chat-left-dots-fill"></i> MESSAGES
+                    <i class="fa fa-comments" style="color: orangered;"></i> MESSAGES
                 </span>
                 <span class="badge rounded-pill bg-danger">227</span>
             </a>
